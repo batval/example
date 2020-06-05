@@ -10,7 +10,7 @@ public class Main {
         //  ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
         //java config
         ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
-        MessageRenderer renderer = context.getBean("renderer",MessageRenderer.class);
+        MessageRenderer renderer = context.getBean("simpleMessageRenderer",MessageRenderer.class);
         renderer.render();
     }
 }
